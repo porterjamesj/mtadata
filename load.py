@@ -115,3 +115,6 @@ def scrape_range(start_date=START_DATE, end_date=END_DATE):
     _, Session = start_db(os.environ["DATABASE_URL"])
     for date in daterange(start_date, end_date):
         scrape_date(date, Session(), requests_session())
+
+if __name__ == "__main__":
+	scrape_range() 

@@ -34,13 +34,13 @@ CREATE UNIQUE INDEX no_dupliate_trips ON mta.trips (
     route
 );
 
-CREATE TABLE mta.stop (
+CREATE TABLE mta.stops (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     mta_id TEXT NOT NULL,
     name TEXT NOT NULL
 );
 
-CREATE UNIQUE INDEX no_dupliate_stops ON mta.stops (
+CREATE UNIQUE INDEX no_dupliate_stops ON mta.stops ( 
     mta_id,
     name
 );
