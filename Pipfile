@@ -11,6 +11,7 @@ sqlalchemy = "*"
 "iso8601" = "*"
 structlog = "*"
 "psycopg2" = "*"
+ipython = "*"
 
 [requires]
 python_version = "2.7"
